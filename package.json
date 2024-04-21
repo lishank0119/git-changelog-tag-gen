@@ -3,8 +3,11 @@
   "version": "1.0.0",
   "description": "git gen changelog tag",
   "main": "index.js",
+  "bin": {
+    "git-changelog-tag-gen": "index.js"
+  },
   "scripts": {
-    "run": "node index.js main patch"
+    "test": "node index.js main patch"
   },
   "repository": {
     "type": "git",
@@ -17,7 +20,7 @@
     "tag"
   ],
   "author": "lishank0119",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/lishank0119/git-changelog-tag-gen/issues"
   },

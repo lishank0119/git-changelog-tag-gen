@@ -4,7 +4,11 @@
 ## 使用方式
 
 ```shell
-npm run gen {branch} patch
-npm run gen {branch} minor
-npm run gen {branch} major
+npm install -g git-changelog-tag-gen
+```
+
+```shell
+git-changelog-tag-gen {branch} patch
+git-changelog-tag-gen {branch} minor
+git-changelog-tag-gen {branch} major
 ```
