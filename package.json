@@ -1,0 +1,25 @@
+{
+  "name": "git-changelog-tag-gen",
+  "version": "1.0.0",
+  "description": "git gen changelog tag",
+  "main": "index.js",
+  "scripts": {
+    "run": "node index.js main patch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lishank0119/git-changelog-tag-gen.git"
+  },
+  "keywords": [
+    "git",
+    "gen",
+    "changelog",
+    "tag"
+  ],
+  "author": "lishank0119",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lishank0119/git-changelog-tag-gen/issues"
+  },
+  "homepage": "https://github.com/lishank0119/git-changelog-tag-gen#readme"
+}
