@@ -14,7 +14,7 @@ function getVersion(branch, increment) {
     }
 
     if (latestTag) {
-        const latestTagParts = latestTag.split('v')[1].split('.');
+        const latestTagParts = latestTag.split('-v')[1].split('.');
         if (latestTagParts.length === 3) {
             major = parseInt(latestTagParts[0]);
             minor = parseInt(latestTagParts[1]);
