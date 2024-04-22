@@ -165,11 +165,11 @@ function updateChangelog(branch, increment) {
     const categorizedChangelog = getChangelogEntries(branch, latestTag);
     const changelogEntry = generateChangelogEntry(newVersion, categorizedChangelog);
 
-    prependToFile('changelog.md', changelogEntry);
+    prependToFile('CHANGELOG.md', changelogEntry);
 }
 
 function commitAndTag(newVersion) {
-    execSync('git add changelog.md');
+    execSync('git add CHANGELOG.md');
     execSync(`git commit -m "chore: changelog for version ${newVersion}"`);
     execSync(`git tag -a ${newVersion} -m "Version ${newVersion}"`);
 }
@@ -207,4 +207,4 @@ updateChangelog(branch, increment);
 const newVersion = getVersion(branch, increment);
 commitAndTag(newVersion);
 
-console.log(`已更新 changelog.md 檔案、提交更改並建立標籤：${newVersion}`);
+console.log(`已更新 CHANGELOG.md 檔案、提交更改並建立標籤：${newVersion}`);
